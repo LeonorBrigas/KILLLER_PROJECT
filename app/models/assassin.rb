@@ -1,0 +1,2 @@
+class Assassin < ApplicationRecord
+end
