@@ -15,6 +15,21 @@ ActiveRecord::Schema.define(version: 2020_08_24_142759) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+
+  create_table "assassins", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.integer "latitude"
+    t.integer "longitude"
+    t.integer "total_kills"
+    t.boolean "has_gun"
+    t.boolean "has_knife"
+    t.boolean "has_candlestick"
+    t.boolean "has_wrenc"
+    t.boolean "has_rope"
+    t.text "summary"
+    t.integer "price"
+
   create_table "users", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
