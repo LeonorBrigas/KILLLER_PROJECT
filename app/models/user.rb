@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :reservations
-  has_many :assassins
-
+  has_many :assassins, dependent: :destroy
+  
   validates :first_name, :last_name, :email, :password, presence: true
 end
