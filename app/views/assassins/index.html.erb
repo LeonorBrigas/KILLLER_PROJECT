@@ -1,0 +1,8 @@
+<div class="cards" style="margin-top: 80px;">
+<% @assassins.each do |assassin| %>
+<div class="card-category">
+
+  <%= link_to assassin.first_name, assassin_path(assassin)%>
+  </div>
+<% end %>
+</div>

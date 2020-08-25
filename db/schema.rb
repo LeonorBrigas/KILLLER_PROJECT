@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_25_120952) do
+ActiveRecord::Schema.define(version: 2020_08_25_162852) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,8 +22,6 @@ ActiveRecord::Schema.define(version: 2020_08_25_120952) do
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "latitude"
-    t.integer "longitude"
     t.integer "total_kills"
     t.boolean "has_gun"
     t.boolean "has_knife"
@@ -32,6 +30,7 @@ ActiveRecord::Schema.define(version: 2020_08_25_120952) do
     t.boolean "has_rope"
     t.string "summary"
     t.integer "price"
+    t.string "city"
     t.index ["user_id"], name: "index_assassins_on_user_id"
   end
 
