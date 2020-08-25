@@ -1,1 +1,17 @@
-
+<div class="flex-container" style="margin-top: 80px;">
+  <%= simple_form_for(@assassin) do |f| %>
+      <%= f.input :first_name %>
+      <%= f.input :last_name %>
+      <%= f.input :photo %>
+      <%= f.input :city %>
+      <%= f.input :total_kills %>
+      <%= f.input :has_gun %>
+      <%= f.input :has_knife %>
+      <%= f.input :has_candlestick %>
+      <%= f.input :has_wrench %>
+      <%= f.input :has_rope %>
+      <%= f.input :summary %>
+      <%= f.input :price %>
+      <%= f.submit "Add an assassin", class: "btn btn-secondary"%>
+  <% end %>
+</div>
