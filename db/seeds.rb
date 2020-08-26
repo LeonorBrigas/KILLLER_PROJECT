@@ -21,7 +21,4 @@ end
  city: Faker::Address.city, total_kills: Faker::Number.within(range: 1..50), has_gun: Faker::Boolean.boolean, has_knife: Faker::Boolean.boolean,
  has_candlestick: Faker::Boolean.boolean, has_wrench: Faker::Boolean.boolean, has_rope: Faker::Boolean.boolean, summary: Faker::Quote.matz,
  price: Faker::Commerce.price, user: User.first)
-
 end
-
-
