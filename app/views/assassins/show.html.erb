@@ -1,5 +1,8 @@
-<div class="container" style="margin-top: 80px;">
-  <p><strong><%= @assassin.first_name %></strong></p>
-  <p><%= link_to "Add a new Assassin", new_assassin_path %></p>
-  <p><%= link_to "Assassin List", assassins_path %></p>
+<div class="container" style="margin-top: 80px; width: 700px;">
+  <p><strong><%= @assassin.first_name + " " + @assassin.last_name%></strong></p>
+  <p><%= @assassin.summary %></p>
+  <p>Total kills: <i class="fas fa-skull-crossbones"></i> <%= @assassin.total_kills%></strong></p>
+  <!-- TODO add link to reservations or show calendar -->
+  <p>Hire this Assassin</p>
+  <p><%= link_to "Back to the Assassin List", assassins_path %></p>
 </div>
