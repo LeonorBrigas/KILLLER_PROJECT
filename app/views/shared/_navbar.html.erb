@@ -23,8 +23,11 @@
         <% end %>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="/assassins">Book an Assassin</a>
-      </li>
+        <%= form_tag("", method: "get") do %>
+        <a class="nav-link" href="/assassins"><%= label_tag(:q, "Find an Assassin:") %></a>
+        <%= text_field_tag(:q) %>
+        <%= submit_tag("Search") %>
+      <% end %>
     </ul>
   </div>
 </div>

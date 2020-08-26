@@ -20,7 +20,7 @@ class AssassinsController < ApplicationController
   def create
     @assassin = Assassin.new(assassin_params)
     @assassin.user = current_user
-    @assassin.saveπ
+    @assassin.save
     if @assassin.save
       redirect_to assassin_path(@assassin)
     else
