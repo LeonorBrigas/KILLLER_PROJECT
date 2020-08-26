@@ -1,14 +1,17 @@
-<div class="Navbar__flex"></div>
-<a class = "Navbar__brand" href="/"></a>
-<img src="" alt="logo">
-
-<%= form_tag("", method: "get") do %>
-  <%= label_tag(:q, "Search for:") %>
-  <%= text_field_tag(:q) %>
-  <%= submit_tag("Search") %>
-<% end %>
-
-
+<div class="Navbar__flex">
+<div class = "search">
+  <form class="navbar-form" action="/assassins" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+    <div class="input-group">
+      <input type="text" name="query" id="query" placeholder="Location?" class="Input--search form-control">
+      <div class="input-group-btn">
+        <button name="button" type="submit" class="btn btn-primary">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
 
 
 <div class="container" style="width: 700px;">
@@ -16,6 +19,7 @@
     <p><%= link_to "Add a new Assassin", new_assassin_path %></p>
     <% @assassins.each do |assassin| %>
     <div class="card-category">
+      <img src="https://files.slack.com/files-pri/T02NE0241-F019FFQQL2H/old_woman_with_knife.jpg" class="card-trip-user avatar-bordered"/>
       <h4><%= link_to assassin.first_name + " " + assassin.last_name, assassin_path(assassin)%></h4>
       <p><%= assassin.summary[0..100] + "..." %></p>
       <p><i class="fas fa-skull-crossbones"></i> <%= assassin.total_kills %></p>
@@ -23,6 +27,20 @@
     <% end %>
   </div>
 </div>
+
+<!--
+<div class="logo-container" style="width: 700px;">
+         <img src="/images/gladys.jpg" alt= "logo" />
+    <div class="Card__body">
+      <h3 class="Card__title">Gladys</h3>
+        <div class="Card__price">50€/a kill</div>
+        <div class="Card__meta">
+        <div class="d-flex">
+      </div>
+      <div>
+      <i class="fas fa-heart color-grey-text"></i>
+    </div>
+</div> -->
 
 <div id="map"
      style="width: 100%; height: 600px;"
