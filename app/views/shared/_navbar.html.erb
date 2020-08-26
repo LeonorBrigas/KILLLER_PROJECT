@@ -1,17 +1,31 @@
 <!-- bootstrap navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container">
-    <a class="navbar-brand" href="/">Bill.Kill</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/assassins">Assasins</a>
-        </li>
-      </ul>
-    </div>
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon"><h1>Bill.Kill</h1>
+  <a class="navbar-brand" href="/">
+    <img src="https://raw.githubusercontent.com/LeonorBrigas/KILLLER_PROJECT/master/app/assets/images/5b928ef2-68d4-4335-b8c0-0d7a160156be_200x200.png" style="width: 100px;" />
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+          <% if user_signed_in? %>
+          Logged in as <strong><%= current_user.email %></strong>.
+          <a class="nav-link">
+            <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+            <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+          <% else %>
+            <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+            <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+        </a>
+        <% end %>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="/assassins">Book an Assassin</a>
+      </li>
+    </ul>
   </div>
-</nav>
+</div>
 <!-- bootstrap navbar end -->
