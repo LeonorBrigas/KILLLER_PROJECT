@@ -13,6 +13,7 @@ class AssassinsController < ApplicationController
 
   def create
     @assassin = Assassin.new(assassin_params)
+    @assassin.user = current_user
     @assassin.save
     if @assassin.save
       redirect_to assassin_path(@assassin)
@@ -24,6 +25,6 @@ class AssassinsController < ApplicationController
   private
 
   def assassin_params
-    params.require(:assassin).permit(:first_name, :last_name)
+    params.require(:assassin).permit(:first_name, :last_name, :photo, :total_kills, :has_gun, :has_knife, :has_candlestick, :has_wrench, :has_rope, :summary, :price, :city)
   end
 end
