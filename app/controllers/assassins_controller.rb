@@ -1,6 +1,12 @@
 class AssassinsController < ApplicationController
   def index
-    @assassins = Assassin.all
+    @assassins = Assassin.geocoded # returns assassins with coordinates
+    @markers = @assassins.map do |assassin|
+      {
+        lat: assassin.latitude,
+        lng: assassin.longitude
+      }
+    end
   end
 
   def show
@@ -14,7 +20,7 @@ class AssassinsController < ApplicationController
   def create
     @assassin = Assassin.new(assassin_params)
     @assassin.user = current_user
-    @assassin.save
+    @assassin.saveπ
     if @assassin.save
       redirect_to assassin_path(@assassin)
     else
