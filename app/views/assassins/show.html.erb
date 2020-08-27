@@ -1,33 +1,29 @@
-
 <div class="container">
   <div class = "show-card">
-  <div class="show-card-image text-center p-3">
-    <%= image_tag @assassin.url %>
-  </div>
-  <div class="show-card-text text-center">
-    <p><strong><%= @assassin.first_name + " " + @assassin.last_name%></strong></p>
-    <p><%= @assassin.summary %></p>
-    <p><i class="fas fa-skull-crossbones"></i> <%= @assassin.total_kills %></p>
-  </div>
-  <div class="show-card-calender">
-    <!-- TODO add link to reservations or show calendar -->
-    <%= simple_form_for [@assassin, @reservation] , method: :post do |f| %>
-    <%= f.input :start_date, as: :date, html5: true %>
-    <%= f.input :end_date, as: :date, html5: true %>
-    <%= f.input :description, as: :text %>
-    <%= f.submit "Hire this Assassin" %>
-    <% end %>
-    <!-- check above -->
-    <!-- show if the assassin is reserved -->
-    <% if @user_reservations.blank? %>
-    <% else %>
-    <% @user_reservations.each do |user_reservation| %>
-      <%= user_reservation.start_date %>
+    <div class="show-card-image text-center p-3">
+      <%= image_tag @assassin.url %>
+    </div>
+    <div class="show-card-text text-center">
+      <p><strong><%= @assassin.first_name + " " + @assassin.last_name%></strong></p>
+      <p><%= @assassin.summary %></p>
+      <p><i class="fas fa-skull-crossbones"></i> <%= @assassin.total_kills %></p>
+    </div>
+    <div class="show-card-calender">
+      <!-- TODO add link to reservations or show calendar -->
+      <%= simple_form_for [@assassin, @reservation] , method: :post do |f| %>
+        <%= f.input :start_date, as: :date, html5: true %>
+        <%= f.input :end_date, as: :date, html5: true %>
+        <%= f.input :description, as: :text %>
+        <%= f.submit "Hire this Assassin" %>
       <% end %>
-    <% end %>
+      <!-- show if the assassin is reserved -->
+      <% if @user_reservations.blank? %>
+        <% else %>
+        <% @user_reservations.each do |user_reservation| %>
+          <%= user_reservation.start_date %>
+      <% end %>
+     <p><%= link_to "Back to the Assassin List", assassins_path %></p>
+    </div>
+    <!-- check above -->
   </div>
-  <!-- check above -->
-  </div>
-</div>
-  <p><%= link_to "Back to the Assassin List", assassins_path %></p>
 </div>
