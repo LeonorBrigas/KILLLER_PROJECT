@@ -1,20 +1,23 @@
 <h2><%= link_to assassin.first_name, assassin_path(assassin) %></h2>
 <p><%= assassin.address %></p>
-<p>Weapons<p>
-<p><i class="fas fa-skull-crossbones"></i> <%= assassin.total_kills %>
+<p><%= cl_image_tag("billkill/noun_Skull_and_Crossbones_9626_gzn0vo.png", :width=>24, :crop=>"scale") %></i> <strong><%= assassin.total_kills %></strong></p>
   <% if assassin.has_wrench %>
-  <i class="fas fa-wrench"></i>
-  <% end %>
-  <% if assassin.has_rope %>
-  <i class="fas fa-rope"></i>
-  <% end %>
-  <% if assassin.has_gun %>
-  <i class="fas fa-gun"></i>
+  <p>Prefered weapons...</p>
   <% end %>
   <% if assassin.has_candlestick %>
-  <i class="fas fa-bowling-ball"></i>
+  <%= cl_image_tag("billkill/noun_Candlestick_16263_zyoyzk.png", :quality=>"auto:best", :width=>24, :crop=>"scale") %>
+  <% end %>
+  <% if assassin.has_rope %>
+  <%= cl_image_tag("billkill/noun_Rope_1969630_w1vgix.png", :quality=>"auto:best", :width=>24, :crop=>"scale") %>
+  <% end %>
+  <% if assassin.has_gun %>
+  <%= cl_image_tag("billkill/noun_Gun_36064_1_zzrtxu.png", :quality=>"auto:best", :width=>24, :crop=>"scale") %>
+  <% end %>
+  <% if assassin.has_wrench %>
+  <%= cl_image_tag("billkill/noun_Wrench_1320_yarcoc.png", :quality=>"auto:best", :width=>24, :crop=>"scale") %>
   <% end %>
   <% if assassin.has_knife %>
-  <i class="fas fa-knife"></i>
+  <%= cl_image_tag("billkill/noun_Knife_149190_t6hfad.png", :quality=>"auto:best", :width=>24, :crop=>"scale") %>
   <% end %>
+  </p>
 
