@@ -101,7 +101,8 @@ data.each do |props|
     price: Faker::Commerce.price,
     address: props[:address],
     user: User.first,
-    url: props[:url]
+    url: props[:url],
+    member_since: Faker::Number.within(range: 2007..2020)
   })
 end
 
