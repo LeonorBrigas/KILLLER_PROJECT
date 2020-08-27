@@ -1,17 +1,19 @@
 //Specific CSS for your home-page
 Specific CSS for your home-page
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
+
 
 .content {
   display: flex;
 }
 
 a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:visited {
   text-decoration: none;
 }
 
