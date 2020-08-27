@@ -3,8 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.6'
 
-gem "pg"
-
 gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'devise' # ADDED GEM, CHANGED THIS
