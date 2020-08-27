@@ -13,6 +13,12 @@ class AssassinsController < ApplicationController
 
   def show
     @assassin = Assassin.find(params[:id])
+    @reservation = Reservation.new
+    if user_signed_in?
+      @user_reservations = current_user.reservations.where(assassin: @assassin)
+    else
+      @user_reservations = []
+    end
   end
 
   def new
@@ -33,6 +39,6 @@ class AssassinsController < ApplicationController
   private
 
   def assassin_params
-    params.require(:assassin).permit(:first_name, :last_name, :photo, :total_kills, :has_gun, :has_knife, :has_candlestick, :has_wrench, :has_rope, :summary, :price, :city)
+    params.require(:assassin).permit(:first_name, :last_name, :photo, :total_kills, :has_gun, :has_knife, :has_candlestick, :has_wrench, :has_rope, :summary, :price, :city, :address, :url)
   end
 end
