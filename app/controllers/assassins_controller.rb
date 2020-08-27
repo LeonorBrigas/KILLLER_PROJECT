@@ -4,7 +4,9 @@ class AssassinsController < ApplicationController
     @markers = @assassins.map do |assassin|
       {
         lat: assassin.latitude,
-        lng: assassin.longitude
+        lng: assassin.longitude,
+        infoWindow: render_to_string(partial: "info_window", locals: { assassin: assassin }),
+        image_url: assassin.url
       }
     end
   end

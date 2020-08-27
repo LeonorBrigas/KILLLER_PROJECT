@@ -21,34 +21,66 @@ end
 
 data = [
   {
-    address: "Rome, Italy"
+    first_name: "Ricardo",
+    last_name: "Araujo",
+    address: "Avenida dos Aliados, Porto",
+    url: "https://avatars1.githubusercontent.com/u/22415816?v=4"
   },
   {
-    address: "Lisbon, Portugal"
+    first_name: "Cass",
+    last_name: "Arola",
+    address: "Avenida da Boavista, Porto",
+    url: "https://avatars1.githubusercontent.com/u/59645241?v=4"
   },
   {
-    address: "London, England"
+    first_name: "Megan",
+    last_name: "Bailey",
+    address: "Rua das Flores, Porto",
+    url: "https://avatars1.githubusercontent.com/u/51266086?v=4"
   },
   {
-    address: "Los Angeles, USA"
+    first_name: "Lara",
+    last_name: "Mills",
+    address: "Rua Santa Catarina, Porto",
+    url: "https://avatars3.githubusercontent.com/u/61751892?v=4"
   },
   {
-    address: "Berlin, Germany"
+    first_name: "Eukleyv",
+    last_name: "Cardoso",
+    address: "Almeida Garrett, Porto",
+    url: "https://avatars1.githubusercontent.com/u/68221749?v=4"
   },
   {
-    address: "Sidney, Australia"
+    first_name: "Branca",
+    last_name: "Chiotte",
+    address: "Galeria de Paris, Porto",
+    url: "https://avatars2.githubusercontent.com/u/68083103?v=4"
   },
   {
-    address: "Tokyo, Japan"
+    first_name: "Samira",
+    last_name: "Eilinger",
+    address: "Miguel Bombarda, Porto",
+    url: "https://avatars1.githubusercontent.com/u/38704468?v=4"
+
   },
   {
-    address: "Cape Town, South Africa"
+    first_name: "Maria",
+    last_name: "Nery",
+    address: "Praça da Batalha, Porto",
+    url: "https://avatars1.githubusercontent.com/u/67118326?v=4"
+
   },
   {
-    address: "Rio de Janeiro, Brazil"
+    first_name: "Louis",
+    last_name: "Fialho",
+    address: "Praça da Liberdade, Porto",
+    url: "https://avatars1.githubusercontent.com/u/61750901?v=4"
   },
   {
-    address: "Mexico City, Mexico"
+    first_name: "Adriano",
+    last_name: "Leite",
+    address: "Praça da Ribeira, Porto",
+    url: "https://avatars0.githubusercontent.com/u/67058933?v=4"
   }
 ]
 puts "Destroy assassins"
@@ -56,8 +88,8 @@ Assassin.destroy_all
 
 data.each do |props|
   assassin = Assassin.create!({
-    first_name: Faker::Name.first_name,
-    last_name: Faker::Name.last_name,
+    first_name: props[:first_name],
+    last_name: props[:last_name],
     city: Faker::Address.city,
     total_kills: Faker::Number.within(range: 1..50),
     has_gun: Faker::Boolean.boolean,
@@ -69,6 +101,7 @@ data.each do |props|
     price: Faker::Commerce.price,
     address: props[:address],
     user: User.first,
+    url: props[:url]
   })
 end
 
