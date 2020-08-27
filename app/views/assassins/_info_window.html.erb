@@ -1,2 +1,20 @@
-<h2><%= assassin.first_name %></h2>
+<h2><%= link_to assassin.first_name, assassin_path(assassin) %></h2>
 <p><%= assassin.address %></p>
+<p>Weapons<p>
+<p><i class="fas fa-skull-crossbones"></i> <%= assassin.total_kills %>
+  <% if assassin.has_wrench %>
+  <i class="fas fa-wrench"></i>
+  <% end %>
+  <% if assassin.has_rope %>
+  <i class="fas fa-rope"></i>
+  <% end %>
+  <% if assassin.has_gun %>
+  <i class="fas fa-gun"></i>
+  <% end %>
+  <% if assassin.has_candlestick %>
+  <i class="fas fa-bowling-ball"></i>
+  <% end %>
+  <% if assassin.has_knife %>
+  <i class="fas fa-knife"></i>
+  <% end %>
+

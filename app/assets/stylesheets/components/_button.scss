@@ -9,19 +9,19 @@
 }
 
 .btn-ghost:hover {
-  opacity: 1;
+  opacity: 0.4;
 }
 
 .btn-flat {
   color: white;
   padding: 8px 24px;
   border-radius: 4px;
-  background: #1EDD88;
+  background: #grey;
   transition: background 0.3s ease;
 }
 
 .btn-flat:hover {
-  background: #1BCB7F;
+  background: #lightgrey;
   color: white;
 }
 
@@ -32,7 +32,7 @@
   font-weight: bold;
   background: linear-gradient(#167FFB, #0F60C4);
   transition: background 0.3s ease;
-  border: 1px solid #0F60C4;
+  border: 1px solid #white;
 }
 
 .btn-gradient:hover {
