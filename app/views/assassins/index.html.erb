@@ -3,7 +3,7 @@
     <p><%= link_to "Add a new Assassin", new_assassin_path %></p>
     <% @assassins.each do |assassin| %>
     <div class="card-category">
-      <img src="https://files.slack.com/files-pri/T02NE0241-F019FFQQL2H/old_woman_with_knife.jpg" class="card-trip-user avatar-bordered"/>
+      <%= image_tag assassin.url %>
       <h4><%= link_to assassin.first_name + " " + assassin.last_name, assassin_path(assassin)%></h4>
       <p><%= assassin.summary[0..100] + "..." %></p>
       <p><i class="fas fa-skull-crossbones"></i> <%= assassin.total_kills %></p>
