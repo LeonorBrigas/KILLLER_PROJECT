@@ -1,12 +1,13 @@
 <div class="container">
   <div class = "show-card">
-    <div class="show-card-image text-center p-3">
-      <%= image_tag @assassin.url %>
+    <div class="show-card-image text-center py-4">
+      <%= image_tag @assassin.url, :class => "style_image" %>
     </div>
     <div class="show-card-text text-center">
-      <p><strong><%= @assassin.first_name + " " + @assassin.last_name%></strong></p>
+      <p><strong><%= @assassin.first_name + " " + @assassin.last_name %></strong></p>
       <p><%= @assassin.summary %></p>
-      <p><i class="fas fa-skull-crossbones"></i> <%= @assassin.total_kills %></p>
+      <p><i class="fas fa-skull-crossbones"></i> <strong><%= @assassin.total_kills %></strong> Verified Billkills</p>
+      <p>Member since <%= @assassin.member_since %></p>
     </div>
     <div class="show-card-calender">
       <!-- TODO add link to reservations or show calendar -->
@@ -14,16 +15,18 @@
         <%= f.input :start_date, as: :date, html5: true %>
         <%= f.input :end_date, as: :date, html5: true %>
         <%= f.input :description, as: :text %>
-        <%= f.submit "Hire this Assassin" %>
+        <div id="card-calendar-button" style="text-align: center"><%= f.submit "Hire" + " " + @assassin.first_name %></div>
       <% end %>
       <!-- show if the assassin is reserved -->
       <% if @user_reservations.blank? %>
-        <% else %>
         <% @user_reservations.each do |user_reservation| %>
           <%= user_reservation.start_date %>
+        <% end %>
       <% end %>
-     <p><%= link_to "Back to the Assassin List", assassins_path %></p>
+      <br>
+     <p><%= link_to "Back", assassins_path %></p>
     </div>
     <!-- check above -->
   </div>
 </div>
+

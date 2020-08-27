@@ -72,7 +72,13 @@
 
 .show-card-image img {
   border-radius: 50%;
+  overflow: hidden;
 }
+
+.style_image {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
 
 
 
