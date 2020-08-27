@@ -8,7 +8,7 @@
   <%= f.input :start_date, as: :date, html5: true %>
   <%= f.input :end_date, as: :date, html5: true %>
   <%= f.input :description %>
-  <%= f.submit %>
+  <%= f.submit "Hire this Assassin" %>
   <% end %>
   <!-- check above -->
   <!-- show if the assassin is reserved -->
@@ -19,6 +19,5 @@
     <% end %>
   <% end %>
   <!-- check above -->
-  <p>Hire this Assassin</p>
   <p><%= link_to "Back to the Assassin List", assassins_path %></p>
 </div>

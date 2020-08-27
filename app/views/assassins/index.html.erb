@@ -1,18 +1,22 @@
 <div class="container">
-  <div class="card-product">
-  <% @assassins.each do |assassin| %>
-    <%= image_tag assassin.url %>
-    <div class="cards-product-infos">
-      <h4><%= link_to assassin.first_name + " " + assassin.last_name, assassin_path(assassin)%></h4>
-      <p><%= assassin.summary[0..50] + "..." %></p>
-      <p><i class="fas fa-skull-crossbones"></i> <%= assassin.total_kills %></p>
+  <div class="row">
+    <div class="col-md-8">
+      <% @assassins.each do |assassin| %>
+        <div class="card-product">
+          <%= image_tag assassin.url %>
+          <div class="cards-product-infos">
+            <h4><%= link_to assassin.first_name + " " + assassin.last_name, assassin_path(assassin)%></h4>
+            <p><%= assassin.summary[0..50] + "..." %></p>
+            <p><i class="fas fa-skull-crossbones"></i> <%= assassin.total_kills %></p>
+          </div>
+        </div>
+          <% end %>
       </div>
-      <% end %>
+    <div class="col-md-4">
+      <div id="map"
+           data-markers="<%= @markers.to_json %>"
+           data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+      </div>
     </div>
-
-  <div id="map"
-       style="height: 100vh;"
-       data-markers="<%= @markers.to_json %>"
-       data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
 </div>
