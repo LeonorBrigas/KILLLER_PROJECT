@@ -1,4 +1,24 @@
 //Specific CSS for your home-page
+Specific CSS for your home-page
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
 
 .container-signin {
 background-image: url('https://raw.githubusercontent.com/LeonorBrigas/KILLLER_PROJECT/f25a955f6ee47a10a35eebe9e6b432ae26fd058f/app/assets/images/killer-820017_1920.jpg');
