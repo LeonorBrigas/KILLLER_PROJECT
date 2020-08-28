@@ -7,8 +7,9 @@
       </div>
     </div>
     <div class="col-md-7">
+      <%= link_to "Add your own Assassin", "new", class: "btn btn-flat-assassins-index" %>
       <% @assassins.each do |assassin| %>
-        <div class="card-product mb-5">
+        <div class="card-product mb-5 mt-4">
           <%= image_tag assassin.url %>
           <div class="cards-product-infos p-4">
             <h2><%= link_to assassin.first_name + " " + assassin.last_name, assassin_path(assassin) %></h2>
