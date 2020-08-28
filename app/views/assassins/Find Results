@@ -1,0 +1,575 @@
+Searching 166 files for "map"
+
+/Users/ross/code/KILLLER_PROJECT/.env:
+    1: MAPBOX_API_KEY=pk.eyJ1IjoibGVvbm9yYnJpZ2FzIiwiYSI6ImNrZHNvNzA2OTB0aGQycGxpM290YXVsM3EifQ.3wH1akmnePY-Nsek0kmVEw
+    2  CLOUDINARY_URL=cloudinary://231961291968975:ElK75NJWNSsfnAVCDq3i9pKHACk@djnfnwxgu
+    3
+
+/Users/ross/code/KILLLER_PROJECT/Gemfile:
+   27  # gem 'bcrypt', '~> 3.1.7'
+   28
+   29: # gem Map
+   30  gem 'geocoder'
+   31
+
+/Users/ross/code/KILLLER_PROJECT/package.json:
+    9      "bootstrap": "^4.5.2",
+   10      "jquery": "^3.5.1",
+   11:     "mapbox-gl": "^1.12.0",
+   12      "popper.js": "^1.16.1",
+   13      "turbolinks": "^5.2.0"
+
+/Users/ross/code/KILLLER_PROJECT/yarn.lock:
+   32      "@babel/traverse" "^7.11.0"
+   33      "@babel/types" "^7.11.0"
+   34:     convert-source-map "^1.7.0"
+   35      debug "^4.1.0"
+   36      gensync "^1.0.0-beta.1"
+   ..
+   39      resolve "^1.3.2"
+   40      semver "^5.4.1"
+   41:     source-map "^0.5.0"
+   42
+   43  "@babel/generator@^7.11.0", "@babel/generator@^7.11.4":
+   ..
+   48      "@babel/types" "^7.11.0"
+   49      jsesc "^2.5.1"
+   50:     source-map "^0.5.0"
+   51
+   52  "@babel/helper-annotate-as-pure@^7.10.4":
+   ..
+   97      regexpu-core "^4.7.0"
+   98
+   99: "@babel/helper-define-map@^7.10.4":
+  100    version "7.10.5"
+  101:   resolved "https://registry.yarnpkg.com/@babel/helper-define-map/-/helper-define-map-7.10.5.tgz#b53c10db78a640800152692b13393147acb9bb30"
+  102    integrity sha512-fMw4kgFB720aQFXSVaXr79pjjcW5puTCM16+rECJ/plGS+zByelE8l9nCpV1GibxTnFVmUuYG9U8wYfQHdzOEQ==
+  103    dependencies:
+  ...
+  182      lodash "^4.17.19"
+  183
+  184: "@babel/helper-remap-async-to-generator@^7.10.4":
+  185    version "7.11.4"
+  186:   resolved "https://registry.yarnpkg.com/@babel/helper-remap-async-to-generator/-/helper-remap-async-to-generator-7.11.4.tgz#4474ea9f7438f18575e30b0cac784045b402a12d"
+  187    integrity sha512-tR5vJ/vBa9wFy3m5LLv2faapJLnDFxNWff2SAYkSE4rLUdbp7CdObYFgI7wK4T/Mj4UzpjPwzR8Pzmr5m7MHGA==
+  188    dependencies:
+  ...
+  268    dependencies:
+  269      "@babel/helper-plugin-utils" "^7.10.4"
+  270:     "@babel/helper-remap-async-to-generator" "^7.10.4"
+  271      "@babel/plugin-syntax-async-generators" "^7.8.0"
+  272
+  ...
+  467      "@babel/helper-module-imports" "^7.10.4"
+  468      "@babel/helper-plugin-utils" "^7.10.4"
+  469:     "@babel/helper-remap-async-to-generator" "^7.10.4"
+  470
+  471  "@babel/plugin-transform-block-scoped-functions@^7.10.4":
+  ...
+  489    dependencies:
+  490      "@babel/helper-annotate-as-pure" "^7.10.4"
+  491:     "@babel/helper-define-map" "^7.10.4"
+  492      "@babel/helper-function-name" "^7.10.4"
+  493      "@babel/helper-optimise-call-expression" "^7.10.4"
+  ...
+  844    integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
+  845
+  846: "@mapbox/geojson-rewind@^0.5.0":
+  847    version "0.5.0"
+  848:   resolved "https://registry.yarnpkg.com/@mapbox/geojson-rewind/-/geojson-rewind-0.5.0.tgz#91f0ad56008c120caa19414b644d741249f4f560"
+  849    integrity sha512-73l/qJQgj/T/zO1JXVfuVvvKDgikD/7D/rHAD28S9BG1OTstgmftrmqfCx4U+zQAmtsB6HcDA3a7ymdnJZAQgg==
+  850    dependencies:
+  ...
+  852      minimist "^1.2.5"
+  853
+  854: "@mapbox/geojson-types@^1.0.2":
+  855    version "1.0.2"
+  856:   resolved "https://registry.yarnpkg.com/@mapbox/geojson-types/-/geojson-types-1.0.2.tgz#9aecf642cb00eab1080a57c4f949a65b4a5846d6"
+  857    integrity sha512-e9EBqHHv3EORHrSfbR9DqecPNn+AmuAoQxV6aL8Xu30bJMJR1o8PZLZzpk1Wq7/NfCbuhmakHTPYRhoqLsXRnw==
+  858
+  859: "@mapbox/jsonlint-lines-primitives@^2.0.2":
+  860    version "2.0.2"
+  861:   resolved "https://registry.yarnpkg.com/@mapbox/jsonlint-lines-primitives/-/jsonlint-lines-primitives-2.0.2.tgz#ce56e539f83552b58d10d672ea4d6fc9adc7b234"
+  862    integrity sha1-zlblOfg1UrWNENZy6k1vya3HsjQ=
+  863
+  864: "@mapbox/mapbox-gl-supported@^1.5.0":
+  865    version "1.5.0"
+  866:   resolved "https://registry.yarnpkg.com/@mapbox/mapbox-gl-supported/-/mapbox-gl-supported-1.5.0.tgz#f60b6a55a5d8e5ee908347d2ce4250b15103dc8e"
+  867    integrity sha512-/PT1P6DNf7vjEEiPkVIRJkvibbqWtqnyGaBz3nfRdcxclNSnSdaLU5tfAgcD7I8Yt5i+L19s406YLl1koLnLbg==
+  868
+  869: "@mapbox/point-geometry@0.1.0", "@mapbox/point-geometry@^0.1.0", "@mapbox/point-geometry@~0.1.0":
+  870    version "0.1.0"
+  871:   resolved "https://registry.yarnpkg.com/@mapbox/point-geometry/-/point-geometry-0.1.0.tgz#8a83f9335c7860effa2eeeca254332aa0aeed8f2"
+  872    integrity sha1-ioP5M1x4YO/6Lu7KJUMyqgru2PI=
+  873
+  874: "@mapbox/tiny-sdf@^1.1.1":
+  875    version "1.1.1"
+  876:   resolved "https://registry.yarnpkg.com/@mapbox/tiny-sdf/-/tiny-sdf-1.1.1.tgz#16a20c470741bfe9191deb336f46e194da4a91ff"
+  877    integrity sha512-Ihn1nZcGIswJ5XGbgFAvVumOgWpvIjBX9jiRlIl46uQG9vJOF51ViBYHF95rEZupuyQbEmhLaDPLQlU7fUTsBg==
+  878
+  879: "@mapbox/unitbezier@^0.0.0":
+  880    version "0.0.0"
+  881:   resolved "https://registry.yarnpkg.com/@mapbox/unitbezier/-/unitbezier-0.0.0.tgz#15651bd553a67b8581fb398810c98ad86a34524e"
+  882    integrity sha1-FWUb1VOme4WB+zmIEMmK2Go0Uk4=
+  883
+  884: "@mapbox/vector-tile@^1.3.1":
+  885    version "1.3.1"
+  886:   resolved "https://registry.yarnpkg.com/@mapbox/vector-tile/-/vector-tile-1.3.1.tgz#d3a74c90402d06e89ec66de49ec817ff53409666"
+  887    integrity sha512-MCEddb8u44/xfQ3oD+Srl/tNcQoqTw3goGk2oLsrFxOTc3dUp+kAnby3PvAeeBYSMSjSPD1nd1AJA6W49WnoUw==
+  888    dependencies:
+  889:     "@mapbox/point-geometry" "~0.1.0"
+  890
+  891: "@mapbox/whoots-js@^3.1.0":
+  892    version "3.1.0"
+  893:   resolved "https://registry.yarnpkg.com/@mapbox/whoots-js/-/whoots-js-3.1.0.tgz#497c67a1cef50d1a2459ba60f315e448d2ad87fe"
+  894    integrity sha512-Es6WcD0nO5l+2BOQS4uLfNPYQaNDfbot3X1XUoloz+x0mPDS3eeORZJl06HXjwBG1fOGwCRnzK88LMdxKRrd6Q==
+  895
+  ...
+ 1566    dependencies:
+ 1567      balanced-match "^1.0.0"
+ 1568:     concat-map "0.0.1"
+ 1569
+ 1570  braces@^2.3.1, braces@^2.3.2:
+ ....
+ 1745      mkdirp "^0.5.1"
+ 1746      move-concurrently "^1.0.1"
+ 1747:     p-map "^3.0.0"
+ 1748      promise-inflight "^1.0.1"
+ 1749      rimraf "^2.7.1"
+ ....
+ 1767      minipass-pipeline "^1.2.2"
+ 1768      mkdirp "^1.0.3"
+ 1769:     p-map "^4.0.0"
+ 1770      promise-inflight "^1.0.1"
+ 1771      rimraf "^3.0.2"
+ ....
+ 1819    dependencies:
+ 1820      camelcase "^2.0.0"
+ 1821:     map-obj "^1.0.0"
+ 1822
+ 1823  camelcase@^2.0.0:
+ ....
+ 1987    integrity sha1-S8A3PBZLwykbTTaMgpzxqApZ3KA=
+ 1988    dependencies:
+ 1989:     map-visit "^1.0.0"
+ 1990      object-visit "^1.0.0"
+ 1991
+ ....
+ 2081      vary "~1.1.2"
+ 2082
+ 2083: concat-map@0.0.1:
+ 2084    version "0.0.1"
+ 2085:   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
+ 2086    integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
+ 2087
+ ....
+ 2138    integrity sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==
+ 2139
+ 2140: convert-source-map@^1.7.0:
+ 2141    version "1.7.0"
+ 2142:   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.7.0.tgz#17a2cb882d7f77d3490585e2ce6c524424a3a442"
+ 2143    integrity sha512-4FJkXzKXEDB1snCFZlLP4gpC3JILicCpGbzG9f9G7tGqGCzETQ2hWPrcinA9oU4wtf2biUaEH5065UnMeR33oA==
+ 2144    dependencies:
+ ....
+ 2353    dependencies:
+ 2354      mdn-data "2.0.4"
+ 2355:     source-map "^0.6.1"
+ 2356
+ 2357  css-tree@1.0.0-alpha.39:
+ ....
+ 2361    dependencies:
+ 2362      mdn-data "2.0.6"
+ 2363:     source-map "^0.6.1"
+ 2364
+ 2365  css-what@^3.2.1:
+ ....
+ 2571      is-path-cwd "^2.0.0"
+ 2572      is-path-in-cwd "^2.0.0"
+ 2573:     p-map "^2.0.0"
+ 2574      pify "^4.0.1"
+ 2575      rimraf "^2.6.3"
+ ....
+ 3165    integrity sha1-QpD60n8T6Jvn8zeZxrxaCr//DRk=
+ 3166    dependencies:
+ 3167:     map-cache "^0.2.2"
+ 3168
+ 3169  fresh@0.5.2:
+ ....
+ 4350    integrity sha512-sWZlbEP2OsHNkXrMl5GYk/jKk70MBng6UU4YI/qGDYbgf6YbP4EvmqISbXCoJiRKs+1bSpFHVgQxvJ17F2li5g==
+ 4351    dependencies:
+ 4352:     pseudomap "^1.0.2"
+ 4353      yallist "^2.1.2"
+ 4354
+ ....
+ 4382      semver "^6.0.0"
+ 4383
+ 4384: map-cache@^0.2.2:
+ 4385    version "0.2.2"
+ 4386:   resolved "https://registry.yarnpkg.com/map-cache/-/map-cache-0.2.2.tgz#c32abd0bd6525d9b051645bb4f26ac5dc98a0dbf"
+ 4387    integrity sha1-wyq9C9ZSXZsFFkW7TyasXcmKDb8=
+ 4388
+ 4389: map-obj@^1.0.0, map-obj@^1.0.1:
+ 4390    version "1.0.1"
+ 4391:   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-1.0.1.tgz#d933ceb9205d82bdcf4886f6742bdc2b4dea146d"
+ 4392    integrity sha1-2TPOuSBdgr3PSIb2dCvcK03qFG0=
+ 4393
+ 4394: map-visit@^1.0.0:
+ 4395    version "1.0.0"
+ 4396:   resolved "https://registry.yarnpkg.com/map-visit/-/map-visit-1.0.0.tgz#ecdca8f13144e660f1b5bd41f12f3479d98dfb8f"
+ 4397    integrity sha1-7Nyo8TFE5mDxtb1B8S80edmN+48=
+ 4398    dependencies:
+ 4399      object-visit "^1.0.0"
+ 4400
+ 4401: mapbox-gl@^1.12.0:
+ 4402    version "1.12.0"
+ 4403:   resolved "https://registry.yarnpkg.com/mapbox-gl/-/mapbox-gl-1.12.0.tgz#7d1c73b1153d7ee219d30d80728d7df079bc7c05"
+ 4404    integrity sha512-B3URR4qY9R/Bx+DKqP8qmGCai8IOZYMSZF7ZSvcCZaYTaOYhQQi8ErTEDZtFMOR0ZPj7HFWOkkhl5SqvDfpJpA==
+ 4405    dependencies:
+ 4406:     "@mapbox/geojson-rewind" "^0.5.0"
+ 4407:     "@mapbox/geojson-types" "^1.0.2"
+ 4408:     "@mapbox/jsonlint-lines-primitives" "^2.0.2"
+ 4409:     "@mapbox/mapbox-gl-supported" "^1.5.0"
+ 4410:     "@mapbox/point-geometry" "^0.1.0"
+ 4411:     "@mapbox/tiny-sdf" "^1.1.1"
+ 4412:     "@mapbox/unitbezier" "^0.0.0"
+ 4413:     "@mapbox/vector-tile" "^1.3.1"
+ 4414:     "@mapbox/whoots-js" "^3.1.0"
+ 4415      csscolorparser "~1.0.3"
+ 4416      earcut "^2.2.2"
+ ....
+ 4476      decamelize "^1.1.2"
+ 4477      loud-rejection "^1.0.0"
+ 4478:     map-obj "^1.0.1"
+ 4479      minimist "^1.1.3"
+ 4480      normalize-package-data "^2.3.4"
+ ....
+ 5071      p-limit "^2.2.0"
+ 5072
+ 5073: p-map@^2.0.0:
+ 5074    version "2.1.0"
+ 5075:   resolved "https://registry.yarnpkg.com/p-map/-/p-map-2.1.0.tgz#310928feef9c9ecc65b68b17693018a665cea175"
+ 5076:   integrity sha512-y3b8Kpd8OAN444hxfBbFfj1FY/RjtTd8tzYwhUqNYXx0fXx2iX4maP4Qr6qhIKbQXI02wTLAda4fYUbDagTUFw==
+ 5077
+ 5078: p-map@^3.0.0:
+ 5079    version "3.0.0"
+ 5080:   resolved "https://registry.yarnpkg.com/p-map/-/p-map-3.0.0.tgz#d704d9af8a2ba684e2600d9a215983d4141a979d"
+ 5081    integrity sha512-d3qXVTF/s+W+CdJ5A29wywV2n8CQQYahlgz2bFiA+4eVNJbHJodPZ+/gXwPGh0bOqA+j8S+6+ckmvLGPk1QpxQ==
+ 5082    dependencies:
+ 5083      aggregate-error "^3.0.0"
+ 5084
+ 5085: p-map@^4.0.0:
+ 5086    version "4.0.0"
+ 5087:   resolved "https://registry.yarnpkg.com/p-map/-/p-map-4.0.0.tgz#bb2f95a5eda2ec168ec9274e06a747c3e2904d2b"
+ 5088    integrity sha512-/bjOqmgETBYB5BoEeGVea8dmvHb2m9GLy1E9W43yeyfP6QQCZGFNa+XRceJEuDB6zqr+gKpIAmlLebMpykw/MQ==
+ 5089    dependencies:
+ ....
+ 5977    dependencies:
+ 5978      chalk "^2.4.2"
+ 5979:     source-map "^0.6.1"
+ 5980      supports-color "^6.1.0"
+ 5981
+ ....
+ 6023    integrity sha1-0/wRS6BplaRexok/SEzrHXj19HY=
+ 6024
+ 6025: pseudomap@^1.0.2:
+ 6026    version "1.0.2"
+ 6027:   resolved "https://registry.yarnpkg.com/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
+ 6028    integrity sha1-8FKijacOYYkX7wqKw0wa5aaChrM=
+ 6029
+ ....
+ 6525    dependencies:
+ 6526      js-base64 "^2.1.8"
+ 6527:     source-map "^0.4.2"
+ 6528
+ 6529  select-hose@^2.0.0:
+ ....
+ 6702      define-property "^0.2.5"
+ 6703      extend-shallow "^2.0.1"
+ 6704:     map-cache "^0.2.2"
+ 6705:     source-map "^0.5.6"
+ 6706:     source-map-resolve "^0.5.0"
+ 6707      use "^3.1.0"
+ 6708
+ ....
+ 6735      is-plain-obj "^1.0.0"
+ 6736
+ 6737: source-list-map@^2.0.0:
+ 6738    version "2.0.1"
+ 6739:   resolved "https://registry.yarnpkg.com/source-list-map/-/source-list-map-2.0.1.tgz#3993bd873bfc48479cca9ea3a547835c7c154b34"
+ 6740    integrity sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw==
+ 6741
+ 6742: source-map-resolve@^0.5.0:
+ 6743    version "0.5.3"
+ 6744:   resolved "https://registry.yarnpkg.com/source-map-resolve/-/source-map-resolve-0.5.3.tgz#190866bece7553e1f8f267a2ee82c606b5509a1a"
+ 6745    integrity sha512-Htz+RnsXWk5+P2slx5Jh3Q66vhQj1Cllm0zvnaY98+NFx+Dv2CF/f5O/t8x+KaNdrdIAsruNzoh/KpialbqAnw==
+ 6746    dependencies:
+ ....
+ 6748      decode-uri-component "^0.2.0"
+ 6749      resolve-url "^0.2.1"
+ 6750:     source-map-url "^0.4.0"
+ 6751      urix "^0.1.0"
+ 6752
+ 6753: source-map-support@~0.5.12:
+ 6754    version "0.5.19"
+ 6755:   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.19.tgz#a98b62f86dcaf4f67399648c085291ab9e8fed61"
+ 6756    integrity sha512-Wonm7zOCIJzBGQdB+thsPar0kYuCIzYvxZwlBa87yi/Mdjv7Tip2cyVbLj5o0cFPN4EVkuTwb3GDDyUx2DGnGw==
+ 6757    dependencies:
+ 6758      buffer-from "^1.0.0"
+ 6759:     source-map "^0.6.0"
+ 6760
+ 6761: source-map-url@^0.4.0:
+ 6762    version "0.4.0"
+ 6763:   resolved "https://registry.yarnpkg.com/source-map-url/-/source-map-url-0.4.0.tgz#3e935d7ddd73631b97659956d55128e87b5084a3"
+ 6764    integrity sha1-PpNdfd1zYxuXZZlW1VEo6HtQhKM=
+ 6765
+ 6766: source-map@^0.4.2:
+ 6767    version "0.4.4"
+ 6768:   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.4.4.tgz#eba4f5da9c0dc999de68032d8b4f76173652036b"
+ 6769    integrity sha1-66T12pwNyZneaAMti092FzZSA2s=
+ 6770    dependencies:
+ 6771      amdefine ">=0.0.4"
+ 6772
+ 6773: source-map@^0.5.0, source-map@^0.5.6:
+ 6774    version "0.5.7"
+ 6775:   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
+ 6776    integrity sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=
+ 6777
+ 6778: source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.1:
+ 6779    version "0.6.1"
+ 6780:   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
+ 6781    integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
+ 6782
+ ....
+ 7147      schema-utils "^1.0.0"
+ 7148      serialize-javascript "^4.0.0"
+ 7149:     source-map "^0.6.1"
+ 7150      terser "^4.1.2"
+ 7151      webpack-sources "^1.4.0"
+ ....
+ 7163      schema-utils "^2.6.6"
+ 7164      serialize-javascript "^4.0.0"
+ 7165:     source-map "^0.6.1"
+ 7166      terser "^4.6.12"
+ 7167      webpack-sources "^1.4.3"
+ ....
+ 7173    dependencies:
+ 7174      commander "^2.20.0"
+ 7175:     source-map "~0.6.1"
+ 7176:     source-map-support "~0.5.12"
+ 7177
+ 7178  through2@^2.0.0:
+ ....
+ 7512    integrity sha512-pHjWdrIoxurpmTcbfBWXaPwSmtPAHS105253P1qyEfSTV2HJddqjM+kIHquaT/L6lVJIk9ltTGc0IxR/G47hYA==
+ 7513    dependencies:
+ 7514:     "@mapbox/point-geometry" "0.1.0"
+ 7515:     "@mapbox/vector-tile" "^1.3.1"
+ 7516      pbf "^3.0.5"
+ 7517
+ ....
+ 7634    integrity sha512-lgTS3Xhv1lCOKo7SA5TjKXMjpSM4sBjNV5+q2bqesbSPs5FjGmU6jjtBSkX9b4qW87vDIsCIlUPOEhbZrMdjeQ==
+ 7635    dependencies:
+ 7636:     source-list-map "^2.0.0"
+ 7637:     source-map "~0.6.1"
+ 7638
+ 7639  webpack@^4.41.2:
+
+/Users/ross/code/KILLLER_PROJECT/app/assets/stylesheets/application.scss:
+    8  @import "font-awesome-sprockets";
+    9  @import "font-awesome";
+   10: @import 'mapbox-gl/dist/mapbox-gl';
+   11
+   12  // Your CSS partials
+
+/Users/ross/code/KILLLER_PROJECT/app/assets/stylesheets/components/_index.scss:
+    7  @import "button";
+    8  @import "footer";
+    9: @import "map";
+   10  @import "cards";
+   11
+
+/Users/ross/code/KILLLER_PROJECT/app/assets/stylesheets/components/_map.scss:
+    3  }
+    4
+    5: #map {
+    6    height: 100vh;
+    7    position: sticky;
+    .
+   17  /*Smallest device*/
+   18  @media (min-width: 100px) and (max-width: 575px) {
+   19:   #map {
+   20      display: none;
+   21    }
+   ..
+   24  /*Small devices (landscape phones, 576px and up)*/
+   25  @media (min-width: 576px) {
+   26:   #map {
+   27      display: block;
+   28    }
+   ..
+   31  /*Medium devices (tablets, 768px and up)*/
+   32  @media (min-width: 1200px) {
+   33:   #map {
+   34      display: block;
+   35    }
+
+/Users/ross/code/KILLLER_PROJECT/app/controllers/assassins_controller.rb:
+    2    def index
+    3      @assassins = Assassin.geocoded # returns assassins with coordinates
+    4:     @markers = @assassins.map do |assassin|
+    5        {
+    6          lat: assassin.latitude,
+
+/Users/ross/code/KILLLER_PROJECT/app/javascript/packs/application.js:
+   25  // External imports
+   26  import "bootstrap";
+   27: // import "mapbox-gl/dist/mapbox-gl.css"
+   28: import { initMapbox } from '../plugins/init_mapbox';
+   29
+   30  // Internal imports, e.g:
+   ..
+   34    // Call your functions here, e.g:
+   35    // initSelect2();
+   36:   initMapbox();
+   37  });
+   38
+
+/Users/ross/code/KILLLER_PROJECT/app/javascript/plugins/init_mapbox.js:
+    1: import mapboxgl from 'mapbox-gl';
+    2
+    3: const fitMapToMarkers = (map, markers) => {
+    4:   const bounds = new mapboxgl.LngLatBounds();
+    5    markers.forEach(marker => bounds.extend([ marker.lng, marker.lat ]));
+    6:   map.fitBounds(bounds, { padding: 70, maxZoom: 15, duration: 0 });
+    7  };
+    8
+    9
+   10: const initMapbox = () => {
+   11:   const mapElement = document.getElementById('map');
+   12
+   13:   if (mapElement) { // only build a map if there's a div#map to inject into
+   14:     mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
+   15:     const map = new mapboxgl.Map({
+   16:       container: 'map',
+   17:       style: 'mapbox://styles/mapbox/streets-v10'
+   18      });
+   19
+   20:     const markers = JSON.parse(mapElement.dataset.markers);
+   21      markers.forEach((marker) => {
+   22:     const popup = new mapboxgl.Popup().setHTML(marker.infoWindow); // add this
+   23      const element = document.createElement('div');
+   24      element.className = 'marker';
+   ..
+   28      element.style.height = '25px';
+   29
+   30:     new mapboxgl.Marker(element)
+   31        .setLngLat([ marker.lng, marker.lat ])
+   32        .setPopup(popup)
+   33:       .addTo(map);
+   34      });
+   35:     fitMapToMarkers(map, markers);
+   36    }
+   37  };
+   38
+   39: export { initMapbox };
+   40
+
+/Users/ross/code/KILLLER_PROJECT/app/views/assassins/index.html.erb:
+    2    <div class="row my-5">
+    3      <div class="col-md-5">
+    4:       <div id="map"
+    5             data-markers="<%= @markers.to_json %>"
+    6:            data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+    7        </div>
+    8      </div>
+
+/Users/ross/code/KILLLER_PROJECT/app/views/devise/registrations/edit.html.erb:
+    7      <%= f.input :email, required: true, autofocus: true %>
+    8
+    9:     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+   10        <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
+   11      <% end %>
+
+/Users/ross/code/KILLLER_PROJECT/app/views/devise/sessions/new.html.erb:
+   20                                required: false,
+   21                                input_html: { autocomplete: "current-password" } %>
+   22:                           <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+   23                        </div>
+   24
+
+/Users/ross/code/KILLLER_PROJECT/app/views/devise/shared/_links.html.erb:
+    3  <% end %>
+    4
+    5: <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+    6    <%= link_to "Sign up", new_registration_path(resource_name) %><br />
+    7  <% end %>
+    8
+    9: <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+   10    <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
+   11  <% end %>
+   12
+   13: <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+   14    <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+   15  <% end %>
+   16
+   17: <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+   18    <%= link_to "Didn't receive unlock instructions?", new_unlock_path(resource_name) %><br />
+   19  <% end %>
+   20
+   21: <%- if devise_mapping.omniauthable? %>
+   22    <%- resource_class.omniauth_providers.each do |provider| %>
+   23      <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider) %><br />
+
+/Users/ross/code/KILLLER_PROJECT/config/initializers/devise.rb:
+  108    # When false, Devise will not attempt to reload routes on eager load.
+  109    # This can reduce the time taken to boot the app but if your application
+  110:   # requires the Devise mappings to be loaded during boot time the application
+  111    # won't boot properly.
+  112    # config.reload_routes = true
+
+/Users/ross/code/KILLLER_PROJECT/config/initializers/geocoder.rb:
+    8    # http_proxy: nil,            # HTTP proxy server (user:pass@host:port)
+    9    # https_proxy: nil,           # HTTPS proxy server (user:pass@host:port)
+   10:   # api_key: ENV['MAPBOX_API_KEY'],               # API key for geocoding service
+   11    # cache: nil,                 # cache object (must respond to #[], #[]=, and #del)
+   12    # cache_prefix: 'geocoder:',  # prefix (string) to use for all cache keys
+
+/Users/ross/code/KILLLER_PROJECT/config/initializers/simple_form.rb:
+  130    config.browser_validations = false
+  131
+  132:   # Custom mappings for input types. This should be a hash containing a regexp
+  133    # to match as key, and the input type that will be used when the field name
+  134    # matches the regexp as value.
+  135:   # config.input_mappings = { /count/ => :integer }
+  136
+  137    # Custom wrappers for input types. This should be a hash containing an input
+  138    # type as key and the wrapper that will be used for all inputs with specified type.
+  139:   # config.wrapper_mappings = { string: :prepend }
+  140
+  141    # Namespaces where SimpleForm should look for custom input classes that
+
+/Users/ross/code/KILLLER_PROJECT/config/initializers/simple_form_bootstrap.rb:
+  416    # Custom wrappers for input types. This should be a hash containing an input
+  417    # type as key and the wrapper that will be used for all inputs with specified type.
+  418:   config.wrapper_mappings = {
+  419      boolean:       :vertical_boolean,
+  420      check_boxes:   :vertical_collection,
+  ...
+  428
+  429    # enable custom form wrappers
+  430:   # config.wrapper_mappings = {
+  431    #   boolean:       :custom_boolean,
+  432    #   check_boxes:   :custom_collection,
+
+189 matches across 18 files
+
+
+Searching 166 files for "mapbox://styles/mapbox/"
+
+/Users/ross/code/KILLLER_PROJECT/app/javascript/plugins/init_mapbox.js:
+   15      const map = new mapboxgl.Map({
+   16        container: 'map',
+   17:       style: 'mapbox://styles/mapbox/dark-v10'
+   18      });
+   19
+
+1 match in 1 file
