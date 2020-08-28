@@ -13,6 +13,7 @@ class AssassinsController < ApplicationController
 
   def show
     @assassin = Assassin.find(params[:id])
+    # @review = Review.new
     @reservation = Reservation.new
     if user_signed_in?
       @user_reservations = current_user.reservations.where(assassin: @assassin)
@@ -28,7 +29,6 @@ class AssassinsController < ApplicationController
   def create
     @assassin = Assassin.new(assassin_params)
     @assassin.user = current_user
-    @assassin.save
     if @assassin.save
       redirect_to assassin_path(@assassin)
     else
