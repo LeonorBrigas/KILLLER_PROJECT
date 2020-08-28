@@ -14,8 +14,12 @@ class AssassinsController < ApplicationController
   def show
     @assassin = Assassin.find(params[:id])
     @reservation = Reservation.new
+    @review = Review.new
+    @reviews = @assassin.reviews
     if user_signed_in?
       @user_reservations = current_user.reservations.where(assassin: @assassin)
+      @reservation_to_review = @user_reservations.last
+      @review.reservation = @reservation_to_review
     else
       @user_reservations = []
     end

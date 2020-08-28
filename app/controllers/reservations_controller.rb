@@ -15,7 +15,6 @@ before_action :authenticate_user!
 
   def index
     @reservations = Reservation.where(user_id: current_user.id)
-    # @review = Review.new
   end
 
   private

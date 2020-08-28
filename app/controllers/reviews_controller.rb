@@ -1,13 +1,11 @@
 class ReviewsController < ApplicationController
-  before_action :set_reservation, only: [:new, :create]
-  def new
-    @review = Review.new
-  end
+  before_action :set_reservation, only: :create
+
   def create
     @review = Review.new(review_params)
     @review.reservation = @reservation
     if @review.save
-      redirect_to reservations_path
+      redirect_to assassin_path(@reservation.assassin)
     else
       render :new
     end

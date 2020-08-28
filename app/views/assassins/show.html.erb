@@ -18,12 +18,38 @@
         <div id="card-calendar-button" style="text-align: center"><%= f.submit "Hire" + " " + @assassin.first_name %></div>
       <% end %>
       <!-- show if the assassin is reserved -->
-      <% if @user_reservations.blank? %>
+      <% unless @user_reservations.empty? %>
         <% @user_reservations.each do |user_reservation| %>
           <%= user_reservation.start_date %>
         <% end %>
+
+        <!-- show the form to review -->
+        <%= simple_form_for [ @reservation_to_review, @review ], url:  reservation_reviews_path(@reservation_to_review), method: :post do |form| %>
+          <%= form.input :content, as: :text %>
+          <%= form.input :rating%>
+          <%= form.button :submit %>
+        <% end %>
+         <!-- show the reviews from users-->
+        <table class="table">
+          <thead>
+          <tr>
+            <th scope="col">Review</th>
+            <th scope="col">Rating</th>
+          </tr>
+        </thead>
+          <tbody>
+            <tr>
+              <% @reviews.each do |review| %>
+              <td><p><strong><%= review.content %></strong></p></td>
+              <td><p><%= review.rating %></p></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
       <% end %>
       <br>
+
+    <div>
      <p><%= link_to "Back", assassins_path %></p>
     </div>
     <!-- check above -->
