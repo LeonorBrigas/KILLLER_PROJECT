@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="col-md-7">
-      <%= link_to "Add your own Assassin", "new", class: "btn btn-flat-assassins-index" %>
+      <%= link_to "Think you've got what it takes?", new_assassin_path, class: "btn btn-flat-assassins-index" %>
       <% @assassins.each do |assassin| %>
         <div class="card-product mb-5 mt-4">
           <%= image_tag assassin.url %>
