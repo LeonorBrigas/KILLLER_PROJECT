@@ -13,15 +13,42 @@
 }
 
 .btn-flat {
-  color: white;
+  color: black;
   padding: 8px 24px;
+  margin-bottom: 8px;
   border-radius: 4px;
-  background: #grey;
-  transition: background 0.3s ease;
+  background: white;
+  transition: background 0.1s ease;
+}
+
+.btn-flat-assassins-index {
+  width: 100%;
+  color: black;
+  padding: 8px 24px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background: white;
+  transition: background 0.1s ease;
+}
+
+.btn-flat-assassins-banner {
+  color: black;
+  padding: 8px 24px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background: white;
+  transition: background 0.1s ease;
+  box-shadow: 0 0 5px rgba(255,255,255,0.3);
+}
+
+.btn-flat-assassins-banner:hover{
+  background: grey;
+  color: white;
+  border: 1px 0 white;
 }
 
 .btn-flat:hover {
-  background: #lightgrey;
+  background: grey;
   color: white;
 }
 
