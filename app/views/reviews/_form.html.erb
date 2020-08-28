@@ -1,0 +1,5 @@
+<%= simple_form_for [ @reservation, @review ], url: reservation_reviews_path(reservation), method: :post do |form| %>
+  <%= form.input :content, as: :text %>
+  <%= form.input :rating%>
+  <%= form.button :submit %>
+<% end %>
