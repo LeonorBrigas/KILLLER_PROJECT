@@ -1,16 +1,10 @@
-<div class="banner">
-  <div class="container" style="padding-bottom: 40px;">
-    <h1>Lorem ipsum dolor to <strong>assasins</strong>!</h1>
+<div class="banner" style="padding-left: 40px; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)), url('https://res.cloudinary.com/djnfnwxgu/image/upload/v1598618831/billkill/banner_map_blood_bavbfu.png');">
+  <div class="container" style="padding-bottom: 50px;">
+    <h1>Hire your hitman or hitwoman <strong>today</strong>!</h1>
   </div>
   <div class="container" style="display: border-box;">
-    <form novalidate="novalidate" class="simple_form search" action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
-      <div class="search-form-control form-group">
-        <input class="form-control string required" type="text" name="search[query]" id="search_query" />
-        <button name="button" type="submit" class="btn btn-flat">
-          <i class="fas fa-search"></i> Search
-        </button>
-      </div>
-     </form>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>NO 'JOB' TOO SMALL!</p>
+    <%= link_to "Find an Assassin", assassins_path, class: "btn btn-flat-assassins-banner" %>
+    <%= link_to "Join our illustrious list today", new_assassin_path, class: "btn btn-flat-assassins-banner" %>
   </div>
 </div>
