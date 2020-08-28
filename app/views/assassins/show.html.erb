@@ -5,13 +5,13 @@
         <div class="show-card-image text-center py-4">
           <%= image_tag @assassin.url, :class => "style_image" %>
         </div>
-        <div class="show-card-text text-center">
+        <div class="show-card-text text-center px-4">
           <p><strong><%= @assassin.first_name + " " + @assassin.last_name %></strong></p>
           <p><%= @assassin.summary %></p>
           <p><i class="fas fa-skull-crossbones"></i> <strong><%= @assassin.total_kills %></strong> Verified Billkills</p>
           <p>Member since <%= @assassin.member_since %></p>
         </div>
-        <div class="show-card-calender">
+        <div class="show-card-calender px-4">
           <!-- TODO add link to reservations or show calendar -->
           <%= simple_form_for [@assassin, @reservation] , method: :post do |f| %>
             <%= f.input :start_date, as: :date, html5: true %>
@@ -24,7 +24,6 @@
             <% @user_reservations.each do |user_reservation| %>
               <%= user_reservation.start_date %>
             <% end %>
-          <% end %>
           <br>
         <!-- show the form to review -->
         <%= simple_form_for [ @reservation_to_review, @review ], url:  reservation_reviews_path(@reservation_to_review), method: :post do |form| %>

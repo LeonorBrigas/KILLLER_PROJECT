@@ -31,6 +31,23 @@
   transition: background 0.1s ease;
 }
 
+.btn-flat-assassins-sign {
+  color: white;
+  padding: 8px 24px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background: black;
+  transition: background 0.1s ease;
+  box-shadow: 0 0 5px rgba(255,255,255,0.3);
+}
+
+.btn-flat-assassins-sign:hover {
+  background: grey;
+  color: white;
+  border: 1px 0 white;
+}
+
+
 .btn-flat-assassins-banner {
   color: black;
   padding: 8px 24px;
