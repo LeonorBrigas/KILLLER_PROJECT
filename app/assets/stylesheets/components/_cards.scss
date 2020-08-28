@@ -79,9 +79,19 @@
   padding: 16px;
 }
 
+.show-card {
+  padding: 20px;
+  margin: 40px;
+  background: white;
+}
+
 .show-card-image img {
+  height: 100%;
+  width: 300px;
   border-radius: 50%;
-  overflow: hidden;
+  object-fit: cover;
+  -webkit-filter: grayscale(0.2);
+  filter: grayscale(0.2);
 }
 
 .style_image {
