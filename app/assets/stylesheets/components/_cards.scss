@@ -51,11 +51,16 @@
   height: 100%;
   width: 140px;
   object-fit: cover;
-  -webkit-filter: grayscale(1);
+  -webkit-filter: grayscale(0.2);
+  filter: grayscale(0.2);
+}
+
+.card-product img:hover {
+   -webkit-filter: grayscale(1);
   filter: grayscale(1);
 }
 
-.card-product h2 a{
+.card-product h2 a {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
