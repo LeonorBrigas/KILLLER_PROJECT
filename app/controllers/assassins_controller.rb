@@ -46,3 +46,13 @@ class AssassinsController < ApplicationController
     params.require(:assassin).permit(:first_name, :last_name, :photo, :total_kills, :has_gun, :has_knife, :has_candlestick, :has_wrench, :has_rope, :summary, :price, :city, :address, :url)
   end
 end
+
+
+
+
+
+
+
+
+
+
