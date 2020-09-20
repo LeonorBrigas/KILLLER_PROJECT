@@ -1,40 +1,35 @@
-<div class="container-signin">
-  <div class="container" style="width: 900px; height: 100vh;">
-    <div class="row">
-      <div class="col-lg-3 col-md-2"></div>
-        <div class="col-lg-6 col-md-8 pt-4 login-box">
-          <div class="col-lg-12 login-bill-kill">
-          </div>
-            <%= simple_form_for([@assassin]) do |f| %>
-          <div class="col-lg-12 login-form">
-              <div class="col-lg-12 login-form">
-                  <form>
-                        <div class="form-group" style="color: white;">
-                            <%= f.input :first_name %>
-                            <%= f.input :last_name %>
-                            <%= f.input :url %>
-                            <%= f.input :total_kills %>
-                            <%= f.input :has_gun %>
-                            <%= f.input :has_knife %>
-                            <%= f.input :has_candlestick %>
-                            <%= f.input :has_wrench %>
-                            <%= f.input :has_rope %>
-                            <%= f.input :summary %>
-                            <%= f.input :price %>
-                            <%= f.input :address %>
-                        </div>
-                          <div class="col-lg-12 loginbttm">
-                          <div class="col-lg-6 login-btm login-text">
-                              <!-- Error Message -->
+<div class="container">
+  <div class="row" style="margin: 50px;">
+    <div class="col-md-12" style="background: white; padding: 50px;">
+        <%= simple_form_for([@assassin]) do |f| %>
+            <div class="col-lg-12 login-form">
+                  <div class="col-lg-12 login-form">
+                      <form>
+                            <div class="form-group" style="color: black;">
+                                <%= f.input :first_name %>
+                                <%= f.input :last_name %>
+                                <%= f.input :url %>
+                                <%= f.input :total_kills %>
+                                <%= f.input :has_gun %>
+                                <%= f.input :has_knife %>
+                                <%= f.input :has_candlestick %>
+                                <%= f.input :has_wrench %>
+                                <%= f.input :has_rope %>
+                                <%= f.input :summary %>
+                                <%= f.input :price %>
+                                <%= f.input :address %>
+                            </div>
+                              <div class="col-lg-12 loginbttm">
+                              <div class="col-lg-6 login-btm login-text">
+                                  <!-- Error Message -->
+                              <%= f.submit "Add Assassin", class: "btn btn-flat-assassins-sign" %>
+
+                              </div>
                           </div>
-                          <div class="col-lg-6 login-btm login-button" >
-                              <%= f.submit "Add an assassin" %>
-                          </div>
-                      </div>
-                    </form>
-               </div>
-          </div>
-        <div class="col-lg-3 col-md-2"></div>
+                        </form>
+                   </div>
+              </div>
+          <div class="col-lg-3 col-md-2"></div>
       <% end %>
     </div>
   </div>

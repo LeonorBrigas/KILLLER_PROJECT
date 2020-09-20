@@ -7,7 +7,7 @@ before_action :authenticate_user!
     @reservation.assassin = @assassin
     @reservation.user = current_user
      if @reservation.save
-      redirect_to assassin_path(@assassin)
+      redirect_to assassin_path(@assassin), notice: 'Booked!'
      else
       render :new
      end
